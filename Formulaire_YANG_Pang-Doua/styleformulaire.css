@@ -1,0 +1,163 @@
+/*Importation de la police provenant de Google Font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; /*Police d'écriture*/
+    background-color: blueviolet; /*Couleur de fond*/
+    color: rgb(0, 0, 0); /*Couleur police d'écriture de la page*/
+    
+}
+/* TITRES */
+header{
+    color: white; /*Couleur du texte*/
+    width: 800px; /*Largeur*/
+    margin: auto; /*En définissant le margin en auto, cela a permit de centrer le cadre contenant le h1 et h2*/
+    border-radius: 10px; /*Arrondir les coins*/
+}
+.h1-h2{
+    border-radius: 15px;
+    padding: 10px; /*En utilisant le padding, cela a permit de modifier l'écart entre le h1 et le h2*/
+    margin-bottom: 80px; /*Permet de mettre un écart entre le h2 et le Cadre Vert*/
+}
+h1, h2 {
+    border-radius: 20px;
+    position: absolute; /*En utilisant position: absolute, cela permit de positionner le h1 et h2 de manière plus spécifique + la longueur de la couleur de fond qui s'adapte à la longueur du h1 et h2*/
+    padding: 20px 10px 20px 10px; /*Ecart intérieur entre la couleur de fond et le texte*/
+}
+h1{
+    background-color: pink;
+    margin-left: -30px; /*Valeur négative pour décaler davantage à gauche*/
+}
+h2{    
+    background-color: rgb(255, 142, 161);
+    margin-left: 200px; /*Pour le décaler de la gauche*/
+    margin-top: 0px; /*Espace entre h1 et h2*/
+}
+
+/* Cadre VERT */
+.contenu-complet {
+    background-color: rgb(167, 255, 193);
+    box-shadow: 0 0 15px 1px pink; /*Mettre une ombre*/
+    width: 800px;
+    margin: auto;
+    padding: 20px 10px 70px 20px; /*Ecart intérieur entre le Cadre Vert et ce qu'il contient*/
+    border-radius: 10px;
+}
+
+/* Coté Gauche*/
+.gauche{
+    width: 40%; /*Largeur*/
+    float: left; /*Permet de mettre à gauche*/
+}
+
+/* Encadrés Couleur */
+.violet{
+    background-color: rgb(219, 182, 253);
+    padding: 15px 15px 5px 15px;
+    border-radius: 15px;
+    margin-bottom: 20px; /*Ecart exterieur du bas*/
+    margin-right: 10px; /*Ecart exterieur de droite*/
+}
+.bleu{
+    background-color: rgb(148, 223, 241);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /*Permet de mettre en colonne*/
+}
+.rose{
+    background-color: pink;
+    border-radius: 20px;
+    position: absolute;
+    padding: 5px;
+}
+.beige{
+    background-color: rgb(253, 219, 156);
+    margin-left: 80px;
+    padding: 5px 5px 8px 5px;
+    border-radius: 15px;
+    text-align: center; /*Aligner au centre*/
+}
+#nom-prenom-email-intitule {
+    font-family: 'Poppins', sans-serif;
+    border-style: none; /*Style de bordure*/
+    width: 95%;
+}
+
+/* Bouton Radio */
+.radio{
+    background-color: pink;
+    border-radius: 15px;
+    margin-left: 100px; /*Décaler de la gauche*/
+    padding: 5px;
+}
+
+/* Checkbox et Dropdown */
+.checkbox-container{
+    margin-top: 50px; /*Ecart exterieur du haut*/
+}
+.checkbox{
+    background-color: pink;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom:10px;
+}
+#dropdown{
+    font-family: 'Poppins', sans-serif;
+    width: 25%;
+    height: 30px; /*Hauteur*/
+    border-radius: 3px;
+    margin-left: 200px;
+    margin-bottom:2px;
+    margin-top: 2px;
+    cursor: pointer; /*Pour afficher le curseur avec le "petit doigt" quand on passe au dessus du bouton*/ 
+}
+#rep-souhaite{
+    font-size: 15px; /*Taille de la police*/
+    margin-right: -200px;
+}
+
+/* Coté Droit */
+.droite{ 
+    width: 60%;
+    float: right; /*Permet de mettre à droite*/
+}
+textarea {
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    min-height: 300px; /*Fixer la taille minimum*/
+    resize: none; /*Pour pas qu'il soit redimensionné (élargir, réctérir)*/
+    border-radius: 3px;
+    border-style: none; /*Pas de style pour le contour/bord*/
+    padding: 0 20px 0 20px; 
+}
+.textarea{
+    background-color: aquamarine;
+    padding: 10px 10px 5px 10px;
+    margin-top: 45px;
+    border-radius: 10px;
+}
+
+/* Boutons */
+footer{
+    display: flex;
+    flex-direction: row; /*Pour mettre en ligne*/
+    margin-left: 430px;
+    margin-bottom: 10px;
+}
+button{
+    height: 40px; /*Hauteur*/
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+#reinitialiser {
+    background-color: rgb(252, 90, 90);
+    border-color: brown; /*Couleur du bord*/
+}   
+#envoyer{
+    background-color: rgb(113, 255, 100);
+    border-color: green;
+}
